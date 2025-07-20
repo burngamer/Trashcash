@@ -21,7 +21,7 @@
                       Browse
                 </a>
 
-                <a href="#" class="px-6 py-3 text-lg font-semibold bg-yellow-400 text-white rounded-xl hover:bg-yellow-500 hover:shadow-md hover:shadow-yellow-300 transition duration-300 ease-in-out">
+                <a href="{% url 'core:signup' %}" class="px-6 py-3 text-lg font-semibold bg-yellow-400 text-white rounded-xl hover:bg-yellow-500 hover:shadow-md hover:shadow-yellow-300 transition duration-300 ease-in-out">
                     Sign Up
                 </a>
                 <a href="#" class="px-6 py-3 text-lg font-semibold bg-yellow-600 text-white rounded-xl hover:bg-yellow-700 hover:shadow-md hover:shadow-yellow-400 transition duration-300 ease-in-out">
@@ -47,7 +47,7 @@
                 <ul class="space-y-2">
                     <li>
                         <a href="#" class="text-lg text-gray-900 hover:text-gray-700">About</a>
-                        <a href="{% url 'contact' %}" class="text-lg text-gray-900 hover:text-gray-700">Contact</a>
+                        <a href="{% url 'core:contact' %}" class="text-lg text-gray-900 hover:text-gray-700">Contact</a>
                         <a href="#" class="text-lg text-gray-900 hover:text-gray-700">Privacy</a>
                         <a href="#" class="text-lg text-gray-900 hover:text-gray-700">Policy</a>
                     </li>
