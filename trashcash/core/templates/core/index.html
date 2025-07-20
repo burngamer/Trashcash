@@ -1,7 +1,7 @@
 {% extends 'core/base.html' %}
 {% block title %}Welcome{% endblock %}
 {% block content %}
-    <div class="mt-6 px-6 py-12 bg-gray-100 rounded-xl">
+    <div class="mt-6 px-6 py-12 bg-amber-300 rounded-xl">
         <h2 class="mb-12 text-2xl text-center">Recommended Items</h2>
     </div>
     <div class="grid grid-cols-3 gap-3">
@@ -11,7 +11,7 @@
             <div>
                 <img src="{{ item.image.url }}" class="rounded-t-xl">
             </div>
-            <div class="p-6 bg-white rounded-b-xl">
+            <div class="p-6 bg-amber-300 rounded-b-xl">
                 <h2 class ="text-2xl">
                     {{ item.name }}
                 </h2>
@@ -23,14 +23,14 @@
           </div>
         {% endfor %}
     </div>
-     <div class="mt-6 px-6 py-12 bg-gray-100 rounded-xl">
+     <div class="mt-6 px-6 py-12 bg-amber-300 rounded-xl">
         <h2 class="mb-12 text-2xl text-center">Categories</h2>
     </div>
     <div class="grid grid-cols-3 gap-3">
         {% for category in categories %}
          <a href="#">
             
-            <div class="p-6 bg-white rounded-b-xl">
+            <div class="p-6 bg-amber-100 rounded-b-xl">
                 <h2 class ="text-2xl">
                     {{ category.name }}
                 </h2>
