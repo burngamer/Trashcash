@@ -20,13 +20,21 @@
                 <a href="#" class="text-lg font-semibold text-white bg-gradient-to-r from-yellow-600 via-amber-500 to-yellow-400 px-5 py-2 rounded-full shadow-lg hover:scale-105 hover:brightness-110 transform transition duration-300 ease-in-out">
                       Browse
                 </a>
-
+                {% if request.user.is_authenticated %}
+                <a href="#" class="px-6 py-3 text-lg font-semibold bg-yellow-400 text-white rounded-xl hover:bg-yellow-500 hover:shadow-md hover:shadow-yellow-300 transition duration-300 ease-in-out">
+                    Inbox
+                </a>
+                <a href="#" class="px-6 py-3 text-lg font-semibold bg-yellow-600 text-white rounded-xl hover:bg-yellow-700 hover:shadow-md hover:shadow-yellow-400 transition duration-300 ease-in-out">
+                    Dashboard
+                </a>
+                {% else %}
                 <a href="{% url 'core:signup' %}" class="px-6 py-3 text-lg font-semibold bg-yellow-400 text-white rounded-xl hover:bg-yellow-500 hover:shadow-md hover:shadow-yellow-300 transition duration-300 ease-in-out">
                     Sign Up
                 </a>
-                <a href="#" class="px-6 py-3 text-lg font-semibold bg-yellow-600 text-white rounded-xl hover:bg-yellow-700 hover:shadow-md hover:shadow-yellow-400 transition duration-300 ease-in-out">
+                <a href="{% url 'core:login' %}" class="px-6 py-3 text-lg font-semibold bg-yellow-600 text-white rounded-xl hover:bg-yellow-700 hover:shadow-md hover:shadow-yellow-400 transition duration-300 ease-in-out">
                     Log In
                 </a>
+                {% endif %}
 
                 
             </div>
